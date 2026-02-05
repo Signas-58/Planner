@@ -1,4 +1,4 @@
-package com.example.mxtaker
+﻿package com.example.planner
 
 import org.junit.Test
 

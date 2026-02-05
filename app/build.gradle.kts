@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mxtaker"
+    namespace = "com.example.planner"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.mxtaker"
+        applicationId = "com.example.planner"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
