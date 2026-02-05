@@ -172,7 +172,7 @@ private fun WeeklyProductivity(values: List<Int>) {
                 .fillMaxWidth()
                 .height(120.dp)
                 .clip(RoundedCornerShape(8.dp))
-                .background(Color(0xFFE0F2F1))
+                .background(MaterialTheme.colorScheme.primary.copy(alpha = 0.25f))
         )
         Spacer(Modifier.height(8.dp))
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
@@ -199,7 +199,12 @@ private fun EmptyCard(text: String, action: String) {
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(Modifier.size(48.dp).clip(RoundedCornerShape(12.dp)).background(Color(0xFFECEFF1)))
+        Box(
+            Modifier
+                .size(48.dp)
+                .clip(RoundedCornerShape(12.dp))
+                .background(MaterialTheme.colorScheme.surfaceVariant)
+        )
         Spacer(Modifier.height(12.dp))
         Text(text, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
         Spacer(Modifier.height(8.dp))
